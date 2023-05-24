@@ -1,0 +1,135 @@
+ <!DOCTYPE html>
+ <html>
+    <head>
+
+        <title>Enroll</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+
+        <style>
+            header{
+                height: 10vh;
+            }
+            
+            caption{
+                text-align: center;
+            }
+            td{
+                text-align: center;
+            }
+            table label{
+                padding: 5px 10px;
+                text-align: start;
+            }
+            table td{
+                text-align: left;
+            }
+            #enroll td{
+                border: 1px solid black;
+                padding: 5px 10px;
+                font-size: 18px;
+                text-align: center;
+            }
+            #enroll{
+                border-collapse: collapse;
+            }
+        </style>
+
+        <script type="text/javascript">
+
+            function calculate(){
+                var course = 0;
+                var uniform = 0;
+                var total = 0;
+
+                if (document.getElementById('adult').checked == true){
+
+                    course = 50;
+
+                }
+                else if( document.getElementById("teen").checked){
+                    course = 60;
+                }
+
+                else if (document.getElementById("child").checked){
+                    course = 48
+                }
+
+                uniforms = 50 * document.getElementById("uniforms").value;
+
+                total = course + uniforms;
+
+                alert("Your Total cost is £ " + total); //This produces a concatenated string in an alert box.
+            }
+        </script>
+        
+    </head>
+
+    <body>
+
+        <header>
+            <img src="Media/images/logo.png" alt="logo.png">
+        </header>
+        <nav>
+            <a href="index.html">Home</a>
+
+        </nav>
+
+        <main>
+            <table>
+                <tr>
+                    <td><label for="firstname">First Name</label></td>
+                    <td><input type="text" id="firstname" name="firstname"><br></td>
+                </tr>
+
+                <tr>
+                    <td><label for="lastname">Last Name</label></td>
+                    <td><input type="text" id="lastname" name="lastname"><br></td>
+                </tr>
+
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td><input type="email" id="email" name="email"><br></td> <!-- html reads email only -->
+                </tr>
+
+                <tr>
+                    <td><label for="phone">Tel</label></td>
+                    <td><input type="tel" id="phone" name="phone"><br></td> <!-- html reads telphone -->
+                </tr>
+            </table>
+
+            <table id="enroll">
+                <caption >Enroll</caption>
+                <tr>
+                    <td>Adult</td>
+                    <td>£50</td>
+                    <td><input type="radio" id="adult" name="course" value="50"></td>
+                </tr>
+                <tr>
+                    <td>Teen</td>
+                    <td>£60</td>
+                    <td><input type="radio" id="teen" name="course" value="60"></td>
+                </tr>
+
+                <tr>
+                    <td>Child</td>
+                    <td>£48</td>
+                    <td><input type="radio" id="child" name="course" value="45"></td>
+                </tr>
+
+                <tr>
+                    <td>Uniform</td>
+                    <td>font-size</td>
+                    <td><input type="number" id="uniforms" min="0" value="8"></td>
+                </tr>
+
+            </table>
+            
+            <input type="submit" id="submit" value="Submit" onclick="calculate()"><br>
+            <input type="reset" id="reset" value="Reset">
+
+        </main>
+        
+    </body>
+ </html>

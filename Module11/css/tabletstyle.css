@@ -1,0 +1,28 @@
+/*tablet viewport*/
+@media screen and (min-width:542px) and (max-width: 899px){
+    nav li{
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 2px 5px;
+        border-radius: 8px;
+        background-color: bisque;
+    }
+    body nav{
+        border: none;
+    }
+    body{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: bold;
+    }
+    .desktop{
+        display: none;
+    }
+    
+    header img{
+        display: block;
+        margin: auto;
+    }
+    figure .mobile{
+        display: none;
+    }
+}

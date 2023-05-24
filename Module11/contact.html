@@ -1,0 +1,62 @@
+ <!DOCTYPE html>
+ <html>
+    <head>
+
+        <title>Contact</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/mobilestyle.css">
+        <style>
+            header{
+                height:10vh;
+                max-width: 100%;
+                height: auto;
+                display: block;
+            }
+            nav a{
+                width: 100%;
+                font-size: 20px;
+                font-weight: bold;
+                text-decoration: none;
+                border: 1px solid red;
+                padding: 15px 30px;
+                color: white;
+                background-image: linear-gradient(to right, red, black);
+            }
+            
+        </style>
+    </head>
+
+    <body>
+        
+        <header>
+            <img src="Media/images/logo.png" alt="logo.png">
+        </header>
+        
+        <nav>
+            <a href="index.html">Home</a>
+        </nav>
+
+        <main>
+            <form>
+                <h2>Contact us</h2>
+                <label for="name">Name</label>
+                <input type="text" id="name"><br>
+
+                <label for="email">Email</label>
+                <input type="text" id="email"><br>
+
+                <label for="course">Course</label>
+                <select name="course">
+                    <option>Adult</option>
+                    <option>Teen</option>
+                    <option>Child</option>
+                </select><br>
+
+                <textarea id="textarea" rows="10" cols="50"></textarea><br>
+                <input type="submit" id="submit" value="submit">
+
+            </form>
+        </main>
+    </body>
+ </html>
