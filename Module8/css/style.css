@@ -1,0 +1,97 @@
+
+
+header img{
+    width: 100%;
+    text-align: center;
+    /*height: auto;*/ /*The height is based on the size of the viewport */
+    max-height: 100px;
+    max-width: 300px;
+}
+
+nav li{
+    list-style-type: none;
+}
+
+nav li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+body nav{
+    border: 2px black solid ;
+    border-radius: 15px;
+    text-align: center;
+}
+
+body figure{
+    margin: 2px;
+    text-align: center;
+}
+
+figure img{
+   width: 100%;
+    max-height: 700px;
+    max-width: 1000px;
+}
+
+body main{
+    margin: 5px;
+}
+
+main .row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+main div .column{
+    float: left;
+}
+
+main div .left{
+    padding: 10px;
+    width: 27%;
+    float: left;
+    
+}
+
+main div .center{
+    padding: 10px;
+    width: 45%;
+    border-right: 3px solid black;
+    border-left: 3px solid black;
+}
+
+main div .right{
+    float: right;
+    padding: 10px;
+    width: 15%;
+}
+
+
+
+
+
+/*Desktop Viewport*/
+@media screen and (min-width:900px) {
+    nav{
+        float: right;
+        margin-top: 8px;
+    }
+    nav li{
+        background-color: white;
+        border: 1px solid black;
+        display: inline-block;
+        padding: 10px 30px;
+    }
+    header img{
+        float: left;
+    }
+    figure .mobile {
+        display: none;
+    }
+     
+}
+
+

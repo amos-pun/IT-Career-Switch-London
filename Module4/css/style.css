@@ -1,0 +1,25 @@
+h2{
+    text-transform: capitalize;
+    color: red;
+    background-color: black;
+}
+
+#vital{
+    font-size: 6vh;
+}
+
+.class{
+    text-decoration: underline;
+}
+
+body main div {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3vh;
+    background-color: white;
+}
+
+footer{
+    background-color: rgb(10, 200, 30);
+
+    color: #ffffff;
+}
