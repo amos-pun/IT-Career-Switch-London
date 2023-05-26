@@ -1,0 +1,28 @@
+table{
+    border: 0.5px solid black;
+    border-collapse: collapse;
+    width: 95%;
+    margin-left: 2.5%;
+    background-color: black;
+}
+caption{
+    border: 0.1em solid black;
+    font-size: 1.5em;
+    background-color: black;
+}
+caption input{
+    text-align: right;
+}
+input {
+    width: 95%;
+    height: 3em;
+    font-size: 2em;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+th, td{
+    background-color: 0.1em solid black;
+    padding: 0.5em;
+    text-align: center;
+}
+
