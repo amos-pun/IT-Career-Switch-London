@@ -9,6 +9,9 @@
         <link rel="stylesheet" href="css/mobilestyle.css">
         <link rel="stylesheet" href="css/tabletstyle.css">
         <link rel="stylesheet" href="css/calculator.css">
+
+        <script src="scripts/calculator.js" type="text/javascript"></script>
+        
     </head>
 
     <body>
@@ -25,6 +28,11 @@
         </header>
         
         <main>
+            <input id="operation" value="0" type="hidden"> <!-- These hidden inputs contain our data.-->
+            <input id="operand" value="" type="hidden"> <!--This will store first number typed in.-->
+            <input id="equivalent" value="0" type="hidden">
+            <input id="decimalVar" value="0" type="hidden">
+             
             <table>
                 <caption><input id="result" type="text" value="0" readonly></caption>
 
@@ -59,7 +67,7 @@
                 <tr>
                     <td><input id="plusminus" value="&plusmn;" type="button" onclick="plusminus()"></td>
                     <td><input id="zero" value="0" type="button" onclick="input(0)"></td>
-                    <td><input id="decimal" value="." type="button" onclick="decimalpoint()"></td>
+                    <td><input id="decimal" value="." type="button" onclick="decimalPoint()"></td>
                     <td><input id="equals" value="=" type="button" onclick="equals()"></td>
                 </tr>   
 
