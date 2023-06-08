@@ -1,4 +1,5 @@
 function equivalentCheck(){ //This allows the last value to remain in view untill other buttons are pressed.
+    console.log("equivalentCheck()");
     if(parseInt(document.getElementById('equivalent').value)){
         document.getElementById('equivalent').value = 0;
         document.getElementById('result').value = 0;
@@ -10,6 +11,9 @@ function input(x) {
     equivalentCheck();
 
     let y = parseFloat(document.getElementById('result').value);
+    console.log("-----y");
+    console.log(y)
+    console.log("-----yy");
 
     if(document.getElementById('decimalVar').value == 0){
         x += y * 10; //multiply the text input by 10 and add the value of x.
@@ -56,8 +60,8 @@ function operandCheck() {
     if(document.getElementById('operand').value == "") {
         document.getElementById('operand').value = document.getElementById('result').value;
 
-        //document.getElementById('result').value = 0; //this is temporary.
-        document.getElementById('equivalent').value = 1;
+        document.getElementById('result').value = 0; //this is temporary.
+       // document.getElementById('equivalent').value = 1;
     }
     else{
 
@@ -71,6 +75,9 @@ function operatorCheck(){
 
     switch (parseInt(document.getElementById('operation').value)) {
         case 1: //addition
+        console.log(a);
+        console.log(b);
+        console.log(a+b);
         a += b;
         break;
 
@@ -87,7 +94,7 @@ function operatorCheck(){
         
     }
 
-    document.getElementById('operand').value = a;
+    //document.getElementById('operand').value = a;
     document.getElementById('result').value = a;
     document.getElementById('equivalent').value = 1;
 }
