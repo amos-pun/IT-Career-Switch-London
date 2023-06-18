@@ -130,7 +130,7 @@ function equals() {
     document.getElementById('result').value = document.getElementById('operand').value;
     document.getElementById('operand').value = "";
     document.getElementById('equivalent').value = 1;
-    document.getElementById('decimalVar').value=0;  //added this line
+    document.getElementById('decimalVar').value = 0;  //added this line
     
 }
 
