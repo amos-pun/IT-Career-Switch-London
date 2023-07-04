@@ -1,0 +1,44 @@
+*{
+    margin: 2px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    border: 1px solid red;
+}
+.header{
+    font-family: Helvetica;
+    font-size: 100px;
+    font-weight: bold;
+    color: khaki;
+    text-align: center;
+    background-image: url(./img1.webp);
+    margin: 60px 0px;
+}
+
+h2{
+    font-family: Helvetica;
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    margin: 50px 0px 20px 0px;
+}
+
+.brushes h2{
+    background-color: mediumspringgreen;
+}
+
+.frame h2{
+    background-color: coral;
+}
+
+.paint h2{
+    background-color: skyblue;
+}
+
+.imp{
+    font-weight: bold;
+    font-family: Helvetica;
+    color: blue;
+}

@@ -1,0 +1,214 @@
+*
+{
+  box-sizing: border-box;
+  margin: 0 0px;
+  padding: 0;
+}
+body{
+  margin: 10px 120px;
+  background-color: beige;
+}
+.navigation{
+  display: block;
+  height: auto;
+  min-height: 70px;
+}
+.navigation ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 0 30px;
+  padding: 10px 25px;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 120px;
+  text-align: center;
+}
+.navigation ul li:hover{
+  cursor: pointer;
+  color: red;
+  background-color: white;
+  letter-spacing: 3px;
+  transition: .1s;
+}
+.navigation a:hover{
+  text-decoration: underline;
+}
+.navigation a{
+  text-decoration: none;
+  color: black;
+}
+
+h4{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 0px 0px;
+}
+.demo-wrap {
+  position: relative;
+  height: 28vh;
+  margin-bottom: 10px;
+}
+  
+.demo-wrap:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  background-image: url(./user-documentation.png);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+  
+.demo-content{
+  position: relative;
+}
+
+.demo-content h3{
+  font-family: 'Caprasimo', cursive;
+  font-size: 14px;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.demo-content h1{
+  color: black;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, 140%);
+  line-height: 60px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px black;
+}
+
+/* Container part starts from here .. */
+
+.container h2{
+  font-family: 'Agdasima', sans-serif;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 32px;
+  color: rgb(67, 65, 65);
+  height: 5vh;
+}
+
+.colors{
+  height: 65vh;
+}
+
+.colors section{
+  display: flex;
+  flex-wrap: wrap;
+}
+.allColors{
+  height: 30vh;
+  width: 25%;
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+}
+
+.blue{
+  background-color: blue;
+}
+.cornFlowerBlue{
+  background-color: cornflowerblue;
+}
+.blueViolet{
+  background-color: blueviolet;
+}
+.lightBlue{
+  background-color: lightblue;
+}
+.e{
+  background-color:  #B0C4DE;
+}
+.midNightBlue{
+  background-color: midnightblue;
+}
+.orangeRed{
+  background-color: orangered;
+}
+.gold{
+  background-color: gold;
+}
+
+
+
+/* -- Font Section start -- */
+/* 
+font-family: 'Abril Fatface', cursive;
+font-family: 'Agdasima', sans-serif;
+font-family: 'Audiowide', cursive;
+font-family: 'Caprasimo', cursive;
+font-family: 'Playfair Display', serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Space Mono', monospace;
+*/
+.fonts{
+  height: 60vh;
+}
+.googlefont{
+  padding: 18px 20px;
+}
+.fonts p{
+  font-size: 20px;
+}
+.fonts .head{
+  font-size: 26px;
+  text-decoration: underline;
+}
+.fonts .abrilFatface{
+  font-family: 'Abril Fatface', cursive;
+}
+.fonts .agdasima{
+  font-family: 'Agdasima', sans-serif;
+}
+.audiowide{
+  font-family: 'Audiowide', cursive;
+}
+.casprasimo{
+  font-family: 'Caprasimo', cursive;
+}
+.plafair{
+  font-family: 'Playfair Display', serif;
+}
+.roboto{
+  font-family: 'Roboto', sans-serif;
+}
+
+.googlefont{
+  border: 2px solid white;
+}
+
+/* -- Font Section End -- */
+
+
+
+/* -- Style Section Start -- */
+.text h3{
+  text-decoration: underline;
+  padding: 5px;
+}
+.text div{
+  border:3px solid white;
+}
+.text ul{
+  padding: 5px 30px;
+  font-size: 20px;
+}
+.nav{
+  margin-bottom: 15px;
+}
+/* -- style section end -- */
